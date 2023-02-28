@@ -126,9 +126,6 @@ fi
 # Pull DeviceTree Changes
     git -C device/xiaomi/raphael pull 2>&1 | grep "fatal"
 
-# Fix Bliss display HALs
-sed -i 's#qcom/display#qcom-caf/sm8150/display#g' hardware/qcom-caf/sm8150/display/config/display-product.mk
-
 # Enable OTA for unofficial Bliss builds
 sed -i 's+https://downloads.blissroms.org/api/v1/updater/los/{device}/{variant}/+https://raw.githubusercontent.com/Peam269/ota/master/bliss/{variant}/{device}.json+g' packages/apps/BlissUpdater/res/values/strings.xml
 
