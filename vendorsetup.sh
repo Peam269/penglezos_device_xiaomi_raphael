@@ -26,7 +26,7 @@ else
     rm -rf packages/apps/KProfiles
     rm -rf packages/apps/AudioFX
     rm -rf packages/apps/OtoMusicPlayer
-    rm -rf vendor/xiaomi/miuicamera
+    rm -rf vendor/GcamMGC
     echo "Downloading dependencies (initial setup)..."
 fi
 
