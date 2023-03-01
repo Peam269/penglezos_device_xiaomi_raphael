@@ -9,7 +9,7 @@ DISPLAY="https://github.com/xdsolraC/hardware_qcom_display.git"
 KPROFILES="https://github.com/onettboots/Boolx_apps_KProfiles"
 AUDIOFX="https://github.com/LineageOS/android_packages_apps_AudioFX"
 OTOMUSICPLAYER="https://github.com/onettboots/packages_apps_OtoMusicPlayer"
-MIUICAM="https://gitlab.com/ItzDFPlayer/vendor_davinci-miuicamera -b miui"
+GCAM="https://gitlab.com/VEN0M98/vendor_GcamBSG"
 
 
 
@@ -114,13 +114,13 @@ else
     echo "Oto Music Player downloaded"
 fi
 
-# MIUI Camera
-if [ -d "vendor/xiaomi/miuicamera" ]
+# Google Camera
+if [ -d "vendor/GcamMGC" ]
 then
-    git -C vendor/xiaomi/miuicamera pull 2>&1 | grep "fatal"
+    git -C vendor/GcamMGC pull 2>&1 | grep "fatal"
 else
-    git clone $MIUICAM vendor/xiaomi/miuicamera 2>&1 | grep "fatal"
-    echo "MIUI Camera downloaded"
+    git clone $GCAM vendor/GcamMGC 2>&1 | grep "fatal"
+    echo "Google Camera downloaded"
 fi
 
 # Pull DeviceTree Changes
