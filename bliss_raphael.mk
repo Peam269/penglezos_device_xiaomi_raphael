@@ -26,7 +26,6 @@ $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 # Bliss
 BLISS_BUILDTYPE := UNOFFICIAL
 EXTRA_UDFPS_ANIMATIONS := true
-ro.bliss.maintainer = "Emil Wagenplast"
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080

@@ -33,4 +33,7 @@
 
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_min_refresh_rate_switch">true</bool>
+
+    <!-- Maintainer information -->
+    <string name="bliss_maintainer">Emil Wagenplast</string>
 </resources>
